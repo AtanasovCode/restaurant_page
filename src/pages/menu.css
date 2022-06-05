@@ -1,0 +1,61 @@
+.container-grid {
+    min-height: min-content;
+    width: 100vw;
+    padding: 100px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-gap: 30px;
+    color: aliceblue;
+    place-content: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.menu-item {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.icon-food {
+    width: 400px;
+    height: 360px;
+}
+
+.food-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    width: 400px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 860px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 400px;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 300px;
+    }
+    .menu-item {
+        height: 300px;
+    }
+    .icon-food {
+        width: 300px;
+        height: 260px;
+    }
+    .food-info {
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,78 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0d1314;
+    width: 100vw;
+    height: 80px;
+    margin-top: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    color: aliceblue;
+    padding: 30px;
+    transition: all .3s ease-in-out;
+}
+
+#home {
+    color: #0d1314;
+    background-image: url('../images/house.png');
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#menu {
+    color: #0d1314;
+    background-image: url('../images/menu.png');
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact {
+    color: #0d1314;
+    background-image: url('../images/call.png');
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home:hover {
+    background-image: url('../images/house-active.png');
+    cursor: pointer;
+    transform: scale(1.037);
+}
+
+#contact:hover {
+    background-image: url('../images/call-active.png');
+    cursor: pointer;
+    transform: scale(1.037);
+}
+
+#menu:hover {
+    background-image: url('../images/menu-active.png');
+    cursor: pointer;
+    transform: scale(1.037);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    filter: invert(100%) brightness(500%);
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}

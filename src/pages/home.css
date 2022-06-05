@@ -1,0 +1,45 @@
+.main-container {
+    width: 100vw;
+    height: 100%;
+}
+
+.main-heading {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, .658);
+    text-align: center;
+    padding: 5px 35px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: 900;
+    font-family: inherit;
+}
+
+.date {
+    font-size: 30px;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+.hours-container {
+    font-size: 22px;
+}
+
+
+@media only screen and (max-width: 400px) {
+    .main-heading {
+        padding: 5px 35px;
+    }
+    .heading {
+        font-size: 37px;
+        margin-bottom: 35px;
+    }
+}
